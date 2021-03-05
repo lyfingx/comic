@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang=zh-CN><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>Comic</title><script>var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' + (coverSupport ? ', viewport-fit=cover' : '') + '" />')</script><link rel=stylesheet href=/static/index.b0ff4c21.css><style>body::after {
+		            content: none;
+		        }</style></head><body><noscript><strong>Please enable JavaScript to continue.</strong></noscript><div id=app></div><script src=/static/js/chunk-vendors.b96e4926.js></script><script src=/static/js/index.476103ab.js></script></body><script>//手机端检查
+		/**
+		 * 移动端相关数据 =>> mobileUtil 对象
+		 * 是否是安卓  : isAndroid
+		 * 是否是IOS   : isIOS
+		 * 是否是移动端: isMobile
+		 * 设备平台    : platform [ ios 或 android ]
+		 * 事件类型    : tapEvent [ tapEvent 或 click ]
+		 * 系统版本号  : version [ 如: ios 9.1 或 andriod 6.0 ]
+		 * 是否支持 touch 事件: isSupportTouch
+		 */
+		let mobileUtil = (function(window) {
+			let UA = window.navigator.userAgent,
+				isAndroid = /android|adr/gi.test(UA),
+				isIOS = /iphone|ipod|ipad/gi.test(UA) && !isAndroid,
+				isMobile = isAndroid || isIOS,
+				platform = isIOS ? 'ios' : isAndroid ? 'android' : 'default',
+				isSupportTouch = 'ontouchend' in document ? true : false;
+		
+			let reg = isIOS ? /os [\d._]*/gi : /android [\d._]*/gi,
+				verinfo = UA.match(reg),
+				version = (verinfo + '').replace(/[^0-9|_.]/gi, '').replace(/_/gi, '.');
+		
+			return {
+				isIOS: isIOS,
+				isAndroid: isAndroid,
+				isMobile: isMobile,
+				platform: platform,
+				version: parseFloat(version),
+				isSupportTouch: isSupportTouch,
+				tapEvent: isMobile && isSupportTouch ? 'tapEvent' : 'click'
+			};
+		})(window);
+		
+		if (!mobileUtil.isMobile) {
+			//暂时停用跳转
+			// window.location.href = document.location.protocol +'//www.baidu.com'
+		}
+		
+		//debug调试时跳转页面
+		
+		// var element = new Image();
+		// Object.defineProperty(element,'id',{get:function(){window.location.href="https://www.baidu.com"}});
+		// console.log(element);</script><script defer src=https://static.cloudflareinsights.com/beacon.min.js data-cf-beacon='{"token": "4749165df09e431ea8e07ed9d4637fd3"}'></script></html>
