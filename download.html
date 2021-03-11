@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="ImageToolBar" content="NO">
-    <title>谜妹漫画 Mimei｜动漫神器下载</title>
+    <title>老司机漫画 ｜动漫神器下载</title>
     <link rel="Shortcut Icon" type="image/x-icon" href="download/favicon.ico">
-    <meta name="description" content="谜妹漫画 Mimei 是最火的动漫软件，拥有丰富资源，包括漫画、动画、小说，每天更新最优质的内容，带你一起进入动漫世界">
+    <meta name="description" content="老司机漫画是最火的动漫软件，拥有丰富资源，包括漫画、动画、小说，每天更新最优质的内容，带你一起进入动漫世界">
     <meta name="keywords"
-          content="谜妹, 迷妹, h动漫, h漫画, 污漫画, 成人漫画, 色情动漫, 成人动漫, 老司机, 在线动漫, 免费漫画, 免费动画, 免费小说, 免费看片, 二次元线上看, 动漫线上看, 动漫软件, 动漫神器, 看片神器, 老司机, 高清在线观看, 安卓版动漫, 苹果版动漫">
+          content="老司机,  h动漫, h漫画, 污漫画,  老司机, 在线动漫, 免费漫画,  二次元线上看, 动漫线上看, 动漫软件, 动漫神器,  安卓版动漫, 苹果版动漫">
     <link rel="stylesheet" href="./download/reset.min.css">
     <style>
         * {
@@ -840,7 +840,7 @@
                 <p>2. 请先开启设置并点击通用</p>
                 <p>3. 接著点击“描述文件与设备管理”</p>
                 <img src="./download/img-ios-how-2@2x.png" alt="step">
-                <p>4. 选择“信任 谜妹漫画”</p>
+                <p>4. 选择“信任 老司机漫画”</p>
                 <img src="./download/img-ios-how-3@2x.png" alt="step">
                 <p>5. 最后回到桌面重新开启应用即可</p>
             </div>
@@ -883,8 +883,8 @@
     </div>
 </section>
 <footer>
-    <p>客服信箱：<a class="mail">mimei.service@gmail.com</a></p>
-    <p>©mimei All rights reserved.</p>
+    <p>客服信箱：<a class="mail">laoshiji@gmail.com</a></p>
+    <p>©LaoShiJi All rights reserved.</p>
 </footer>
 
 <div class="fixed-bottom">
@@ -921,7 +921,7 @@
 <div class="pop-content ios">
     <div class="popup">
         <p class="pop-title">苹果版本14用户注意</p>
-        <p class="pop-desc">若您的手机版本为 iOS 14，开启软件时，请务必同意谜妹漫画取得手机权限，避免无法使用。</p>
+        <p class="pop-desc">若您的手机版本为 iOS 14，开启软件时，请务必同意老司机漫画取得手机权限，避免无法使用。</p>
         <div class="btn-content">
             <div class="btn confirm">我知道了</div>
         </div>
@@ -982,10 +982,6 @@
         });
     };
 
-
-
-
-
     // 滾動到安裝教學位置
     const scrollTo = function (_self) {
         $('html, body').animate({
@@ -1002,14 +998,14 @@
     // 預設信件內容
     const sendMailContent = function () {
         let mailUrl = "mimei.service@gmail.com";
-        let title = "谜妹漫画下载页问题与建议";
+        let title = "老司机漫画下载页问题与建议";
         let body = `您好，
             请输入您的问题与建议：
             所在地区：
             手机型号：
             ＿＿＿＿＿＿＿＿＿＿＿＿＿
 
-            感谢您提供宝贵的意见，谜妹漫画Mimei团队敬上
+            感谢您提供宝贵的意见，老司机漫画Mimei团队敬上
             mimei.service@gmail.com`;
         let arr = [
             `subject=${encodeURIComponent(title)}`,
@@ -1061,12 +1057,12 @@
         }
 
 
-        // quertString utm_source 內容，傳到安卓下載網址設置 function 中
-        //let utm_source = getParameterByName("utm_source");
-        //let user_id = getParameterByName("user_id");
+        // quertString utm_source
+        let utm_source = getParameterByName("utm_source");
+        let user_id = getParameterByName("user_id");
         // 发送请求
         let logData = {
-            //utm_source:utm_source,
+            // utm_source:utm_source,
             // user_id:user_id,
             url:window.location.href
         }
