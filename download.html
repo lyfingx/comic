@@ -1067,6 +1067,9 @@
             url:window.location.href
         }
 
+        window.localStorage.setItem('utm_source',utm_source);
+        window.localStorage.setItem('user_id',user_id);
+
         log(logData)
 
 
@@ -1075,16 +1078,12 @@
             "android": [
                 {
                     "name": "国内载点1",
-                    "url": "https:\/\/public.yuezhixian.cn\/android\/mimei.apk"
-                },
-                {
-                    "name": "国内载点2",
-                    "url": "https:\/\/public.sxxiyu.cn\/android\/mimei.apk"
+                    "url": "download/android.apk"
                 }
             ],
             "ios": {
                         "name": "下载点",
-                        "url": "download/mobileConfig"
+                        "url": "download/app.mobileconfig"
             }
 
         }
