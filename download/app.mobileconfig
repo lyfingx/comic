@@ -27,7 +27,7 @@
                         <key>IsRemovable</key>
                         <true/>
                         <key>Label</key>
-                        <string>泡泡漫画Lite </string>
+                        <string>泡泡漫Lite </string>
                         <key>PayloadDescription</key>
                         <string>配置 Web Clip 設定</string>
                         <key>PayloadDisplayName</key>
@@ -57,7 +57,7 @@
 
             永久地址：https://comic.pages.dev</string>
                 <key>PayloadDisplayName</key>
-                <string>泡泡漫画Lite</string>
+                <string>泡泡漫Lite</string>
                 <key>PayloadIdentifier</key>
                 <string>MacBook-Pro.C802E821-C010-4A29-B135-4477A8D8AE64</string>
                 <key>PayloadRemovalDisallowed</key>
