@@ -803,7 +803,7 @@
             </div>
         </div>
         <div class="main-content">
-            <a id="online" class="btn iosShow download-btn" href="index.html">
+            <a id="online" class="btn showf download-btn" href="index.html">
                 <div class="text">在线观看</div>
                 <img src="./download/ic-btn-1@2x.png" alt="live" class="icon">
             </a>
@@ -813,7 +813,7 @@
                 <img src="./download/ic-btn-1@2x.png" alt="live" class="icon">
             </a>
 
-            <a id="android_downloadNow" href="download/mimei.apk"
+            <a id="android_downloadNow" href="download/20210422165046.apk"
                class="btn androidShow download-btn" data-tab="#androidApp">
                 <div class="text">安卓APP下载</div>
                 <img src="./download/ic-btn-1@2x.png" alt="hot">
@@ -1044,7 +1044,7 @@
     function log(data) {
         $.ajax({
             type: "POST",
-            url: '/api/trace',
+            url: 'https://cdn.vipsnovel.com/api/trace',
             data:  JSON.stringify( data),
             contentType: "application/json; charset=utf-8",
             dataType: "json"
@@ -1088,7 +1088,7 @@
 
         }
 
-        setAndroidUrl(data["android"], utm_source);
+        // setAndroidUrl(data["android"], utm_source);
         // setIosUrl(data["ios"]);
         //todo 安卓微信跳转出去
         if (mobile_bs.versions.wechat) {
