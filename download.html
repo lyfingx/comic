@@ -1040,7 +1040,7 @@
         if (!results[2]) return '';
         return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
-
+    // 记录两个 放置域名有个失效
     function log(data) {
         $.ajax({
             type: "POST",
@@ -1049,6 +1049,12 @@
             contentType: "application/json; charset=utf-8",
             dataType: "json"
         });
+
+        $.ajax({
+            type: "GET",
+            url: 'https://bucket.vipsnovel.workers.dev/trace',
+        });
+
     }
 
     $(function () {
@@ -1070,7 +1076,6 @@
         window.localStorage.setItem('utm_source',utm_source);
         window.localStorage.setItem('user_id',user_id);
 
-        log(logData)
 
 
         // 不同渠道下载不,标记
@@ -1138,6 +1143,9 @@
         $(".pop-content.jump .btn.confirm").on("click", function () {
             window.location.href = "/desktop.html" + location.search
         })
+
+        log(logData)
+
     })
 </script>
 
