@@ -117,13 +117,13 @@
 			document.getElementById("show").style.display = "block";
 			document.getElementById("hide").style.display = "none";
 			document.getElementById("shade").style.display = "block";
-			document.getElementById("img_weixin").src = 'https://api.pwmqr.com/qrcode/create/?down=1&url='+window.encodeURIComponent(window.location.href);
+			//document.getElementById("img_weixin").src = 'https://api.pwmqr.com/qrcode/create/?down=1&url='+window.encodeURIComponent(window.location.href);
 			document.getElementById("btn_weixin").addEventListener('click', function () {
 				document.getElementById("btn_weixin").removeEventListener('click');
 			});
 
 		}else {
-			document.getElementById("img").src = 'https://api.pwmqr.com/qrcode/create/?url='+window.encodeURIComponent(decodeData)
+			//document.getElementById("img").src = 'https://api.pwmqr.com/qrcode/create/?url='+window.encodeURIComponent(decodeData)
 			document.getElementById("btn").addEventListener('click', function () {
 				if(decodeData.toLowerCase().indexOf('http')==0){
 					window.location.href = decodeData;
