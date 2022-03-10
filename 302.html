@@ -84,10 +84,13 @@
 			background: rgba(0, 0, 0, 0.6);
 		}
 	</style>
+	<a id="a-link" class="mrigin-auto" href="" >URL</a>
+
 	<div id="show" style="display:none">
 		<div id="shade" style="display:none"></div>
 		<img class="mrigin-auto" id="img_weixin" src="" alt="">
 		<button class="mrigin-auto" id="btn_weixin">点击打开</button>
+
 	</div>
 	<div id="hide" style="display:block">
 		<div id="intro">
@@ -101,13 +104,15 @@
 		</div>
 		<img class="mrigin-auto" id="img" src="" alt="">
 		<button class="mrigin-auto" id="btn">点击打开</button>
+
 	</div>
 </body>
 <script type="text/javascript">
 	window.onload = function () {
 		var encodeData = window.location.search.substr(1)
 		var decodeData = window.decodeURIComponent(window.atob(encodeData))//解码。
-		console.log(decodeData)
+		console.log('url->'+decodeData)
+		document.getElementById("a-link").href = decodeData
 
 		var ua = window.navigator.userAgent.toLowerCase();
 		var u = navigator.userAgent;
@@ -125,11 +130,13 @@
 		}else {
 			//document.getElementById("img").src = 'https://api.pwmqr.com/qrcode/create/?url='+window.encodeURIComponent(decodeData)
 			document.getElementById("btn").addEventListener('click', function () {
-				if(decodeData.toLowerCase().indexOf('http')==0){
-					window.location.href = decodeData;
-					document.getElementById("btn").click()
+				if(decodeData.toLowerCase().indexOf('/')!== false){
+					//window.location.href = decodeData;
+					document.getElementById("a-link").click()
+				}else{
+					alert('解码出错');
 				}
-				//document.getElementById("btn").removeEventListener('click');
+				document.getElementById("btn").removeEventListener('click');
 			});
 
 			var t=setTimeout(()=>{
