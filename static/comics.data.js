@@ -4,7 +4,7 @@ let comics = [{"id":1,"name":"\u6291\u6b32\u4eba\u59bb","author":"\u6708\u5154&\
 // https://gh.api.99988866.xyz/
 // jsdlive 代替  https://raw.fastgit.org/lyfingx/1656407040/master/6/64/1.jpeg
 
-let baseGitUrl = 'https://ghproxy.com/https://raw.githubusercontent.com/lyfingx/'
+let baseGitUrl = 'https://raw.fastgit.org/lyfingx/'
 
 // 补充url
 for (var i = 0; i < comics.length; i++) {  //遍历数组
