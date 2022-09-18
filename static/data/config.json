@@ -1,3 +1,36 @@
 {
-	"version": 220915
+	"version": 220921,
+	"upgrade_notice": "修复了一些BUG",
+	"isShowAd": true,
+	"ads": [{
+			"type": "banner",
+			"src": "/static/banner/1.jpg",
+			"url": "https://www.qq.com"
+		},
+		{
+			"type": "banner",
+			"src": "/static/banner/2.jpg",
+			"url": "https://www.baidu.com"
+		},
+		{
+			"type": "video",
+			"src": "/static/ad/1.mp4",
+			"url": "https://www.qq.com"
+		},
+		{
+			"type": "video",
+			"src": "/static/ad/2.mp4",
+			"url": "https://www.qq.com"
+		},
+		{
+			"type": "video",
+			"src": "/static/ad/3.mp4",
+			"url": "https://www.qq.com"
+		},
+		{
+			"type": "video",
+			"src": "/static/ad/4.mp4",
+			"url": "https://www.qq.com"
+		}
+	]
 }
