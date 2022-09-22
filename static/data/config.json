@@ -1,6 +1,6 @@
 {
-	"version": 220921,
-	"upgrade_notice": "修复了一些BUG",
+	"version": 220925,
+	"upgrade_notice": "增加通知",
 	"isShowAd": true,
 	"ads": [{
 			"type": "banner",
