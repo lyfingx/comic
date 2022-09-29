@@ -1,7 +1,7 @@
 {
-	"version": 220927,
-	"upgrade_notice": "优化一些问题",
-	"isShowAd": true,
+	"version": 220930,
+	"upgrade_notice": "https://h5.18comic.cf",
+	"is_show_ad": true,
 	"ads": [{
 			"type": "image",
 			"src": "/static/ad/1.png",
