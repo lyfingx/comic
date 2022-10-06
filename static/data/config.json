@@ -1,7 +1,7 @@
 {
-	"version": 220936,
-	"upgrade_notice": "https://h5.18comic.cf",
-	"is_show_ad": true,
+	"version": 221006,
+	"upgrade_notice": "隐藏tg通知",
+	"is_show_ad": false,
 	"ads": [{
 			"type": "image",
 			"src": "/static/ad/1.png",
