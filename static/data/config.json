@@ -1,6 +1,6 @@
 {
-	"version": 221006,
-	"upgrade_notice": "隐藏tg通知",
+	"version": 221007,
+	"upgrade_notice": "��ȥVIP",
 	"is_show_ad": false,
 	"ads": [{
 			"type": "image",
